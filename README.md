@@ -1,3 +1,4 @@
+````markdown
 # 🧩 LangGraph Examples — Estudos com Grafos de IA
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
@@ -30,3 +31,52 @@ Este repositório demonstra, de forma progressiva, como criar **pipelines inteli
 python -m venv .venv
 source .venv/bin/activate   # Linux/Mac
 .venv\\Scripts\\activate    # Windows
+````
+
+2️⃣ Instale dependências:
+
+```bash
+pip install -r requirements.txt
+```
+
+3️⃣ Configure sua variável de ambiente com a API da OpenAI:
+
+```bash
+export OPENAI_API_KEY="sua_chave_aqui"
+```
+
+4️⃣ Execute um exemplo:
+
+```bash
+python 01_basic_chain.py
+```
+
+---
+
+## 🧠 Conceitos principais
+
+* **LangGraph** — constrói fluxos dinâmicos de IA baseados em grafos.
+* **LLMNode / ToolNode / PromptNode** — nós executáveis que interagem com modelos ou funções.
+* **State** — mantém o contexto e resultados intermediários.
+* **Streaming** — respostas em tempo real.
+* **Branching** — caminhos diferentes dependendo do estado.
+
+---
+
+## 👨‍💻 Autor
+
+**Danton Rodrigues**
+💼 *Estudos em Inteligência Artificial, Automação e Grafos de Linguagem*
+📫 [GitHub](https://github.com/dantonissler)
+
+---
+
+> “O poder do LangGraph está em unir a lógica de fluxo de trabalho com a inteligência dos modelos de linguagem.”
+
+```
+
+---
+
+Posso gerar **todos esses 5 arquivos + o README e requirements.txt** automaticamente e entregar em um `.zip` pronto pra você subir no GitHub (`langgraph_examples.zip`).  
+Quer que eu crie agora?
+```
