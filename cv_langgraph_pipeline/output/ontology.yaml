@@ -1,0 +1,60 @@
+entities:
+  nome_candidato:
+    patterns_any:
+      - '(?i)\b(nome|candidate|candidato|curriculum vitae)\s*[:\-]?\s*([A-ZÁ-Ú][A-Za-zÁ-Úá-ú\s\'-]{3,})'
+    value_format: "{g2}"
+    type: text
+
+  email:
+    patterns_any:
+      - '(?i)[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}'
+    value_format: "{match}"
+    type: text
+
+  telefone:
+    patterns_any:
+      - '(?i)(\+?\d{1,3}\s*)?(\(?\d{2}\)?\s*)?\d{4,5}[-\s]?\d{4}'
+    value_format: "{match}"
+    type: text
+
+  linkedin:
+    patterns_any:
+      - '(?i)https?://(www\.)?linkedin\.com/in/[A-Za-z0-9\-_/]+'
+    value_format: "{match}"
+    type: text
+
+  github:
+    patterns_any:
+      - '(?i)https?://(www\.)?github\.com/[A-Za-z0-9\-_]+'
+    value_format: "{match}"
+    type: text
+
+  escolaridade:
+    patterns_any:
+      - '(?i)\b(gradua[cç][aã]o|bacharelado|licenciatura|p[oó]s[- ]gradua[cç][aã]o|especializa[cç][aã]o|mestrado|doutorado)\b'
+    value_format: "{match}"
+    type: label
+
+  anos_experiencia:
+    patterns_any:
+      - '(?i)(\d{1,2})\s*(anos?|yrs?)\s*(de\s*)?experi[êe]ncia'
+    value_format: "{g1}"
+    type: number
+
+  ultima_empresa:
+    patterns_any:
+      - '(?i)(empresa|companhia|organization|org)\s*[:\-]\s*([A-ZÁ-Ú0-9][^\n]{2,60})'
+    value_format: "{g2}"
+    type: text
+
+  ultimo_cargo:
+    patterns_any:
+      - '(?i)(cargo|posi[cç][aã]o|position|fun[cç][aã]o)\s*[:\-]\s*([A-ZÁ-Ú][^\n]{2,60})'
+    value_format: "{g2}"
+    type: text
+
+  habilidades_tecnicas:
+    patterns_any:
+      - '(?i)\b(python|java|javascript|typescript|c\+\+|c#|go|rust|sql|postgresql|mysql|mongodb|redis|docker|kubernetes|aws|gcp|azure|spark|hadoop|pandas|numpy|scikit-learn|tensorflow|pytorch)\b'
+    value_format: "{match}"
+    type: list

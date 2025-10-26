@@ -1,0 +1,13 @@
+langgraph
+langchain
+langchain-openai
+openai
+pydantic>=2
+pandas
+pypdf
+pypdfium2
+pytesseract
+pillow
+python-dateutil
+pyyaml
+openpyxl
